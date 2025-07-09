@@ -1,0 +1,161 @@
+/*
+  Author: Daniella Bertoldi
+  Date: 06/30/2025
+  File: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Navigation styles (Mobile First) */
+nav {
+  background-color: #2a1f14;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+/* Main content styles */
+main {
+  background-color: #fdf6ee;
+  padding: 2%;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+main h3 {
+  font-size: 1.25em;
+  padding-top: 2%;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+main li {
+  font-weight: bold;
+  color: #443319;
+}
+
+/* Headings */
+h1 {
+  font-family: Georgia, serif;
+  font-size: 8vw;
+  font-weight: bold;
+  padding: 2%;
+}
+
+h2 {
+  display: block;
+  font-family: Verdana, Arial, sans-serif;
+  color: #4d3319;
+  padding: 0.5em 0;
+}
+
+/* Links */
+.action {
+  color: #4d3319;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.action:hover {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/* Contact class */
+.contact {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #f6eee4;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 2%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding: 2% 1%;
+  margin-top: 1%;
+}
+
+/* Mobile styles */
+.tab-desk {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+/* Tablet/Desktop styles */
+@media (min-width: 768px) {
+  .tab-desk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2em; /* Step 14: Reset h1 size for larger screens */
+  }
+}
+
+/* Large screen styles */
+@media (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
