@@ -4,25 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – Brazilian Side B</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-
-  <nav class="main-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#shows">Shows</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
-  </ul>
-</nav>
-
-
+  <!-- Header & Navigation -->
+  <header class="hero-header">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shows.html">Shows</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Contact</h1>
   </header>
 
+  <!-- Contact Form -->
   <div class="contact-container">
     <h1>Fill Out Form for Booking Info</h1>
     <form action="mailto:bertoldi.daniella@gmail.com" method="post" enctype="text/plain" class="contact-form">
@@ -30,28 +30,28 @@
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
-    <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="phone" required>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-    <label for="city">City</label>
-    <input type="text" id="city" name="city">
+      <label for="city">City</label>
+      <input type="text" id="city" name="city">
 
-    <label for="budget">Budget</label>
-    <select id="budget" name="budget" required>
-      <option value="">-- Select an Option --</option>
-      <option value="$700"> $700 – 1 Hour Set</option>
-      <option value="$1300"> $1300 – 2 Hours Set</option>
-      <option value="$2000"> $2000 – 3 Hours Set</option>
-    </select>
+      <label for="budget">Budget</label>
+      <select id="budget" name="budget" required>
+        <option value="">-- Select an Option --</option>
+        <option value="$700">$700 – 1 Hour Set</option>
+        <option value="$1300">$1300 – 2 Hours Set</option>
+        <option value="$2000">$2000 – 3 Hours Set</option>
+      </select>
 
-    <button type="submit">Send</button>
-  </form>
-</div>
+      <button type="submit">Send</button>
+    </form>
+  </div>
 
-
+  <!-- Footer -->
   <footer>
     <p>© 2025 Brazilian Side B</p>
   </footer>
